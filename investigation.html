@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investigação Científica — UMACI</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <img src="./assets/images/logo.png" class="logo" alt="logo" />
+    <ul class="nav__links" id="navLinks">
+      <li><a href="./index.html">Início</a></li>
+      <li class="dropdown">
+        <a href="#colecoes" class="dropdown__title">Coleções</a>
+      <ul class="dropdown__menu">
+        <li><a href="./pedagogical.html">Pedagógica</a></li>
+        <li><a href="./medical_veterinary.html">Médica e Veterinária</a></li>
+        <li><a href="./hemiptera.html">Hemíptera</a></li>
+      </ul>
+    </li>
+      <li><a href="./investigation.html">Investigação</a></li>
+      <li><a href="./education.html">Ensino</a></li>
+      <li><a href="./volunteering _options.html">Voluntariado</a></li>
+      <li><a href="./team.html">Equipa</a></li>
+    </ul>
+    <a href="#contacto" class="nav__cta">Contacto</a>
+    <button class="nav__toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="hero" style="min-height: 60vh;">
+    <div class="hero__parallax">
+      <img src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?w=1600&q=80" alt="Laboratório de Investigação" />
+    </div>
+    <div class="hero__glass">
+      <span class="hero__kicker">Ciência e Descoberta</span>
+      <h1>Investigação <em>Científica</em></h1>
+      <p>A UMACI está empenhada na promoção e desenvolvimento de projetos inovadores que contribuem para soluções sustentáveis e o avanço do conhecimento global.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="investigacao">
+      <div class="container">
+        <div class="investigacao__layout">
+          <div class="investigacao__text">
+            <span class="section-tag">Missão</span>
+            <h2>Onde a <em>curiosidade</em> encontra o rigor</h2>
+            <p>Os nossos projetos abrangem um vasto leque de temáticas dentro da entomologia, desde a ecologia e taxonomia até à genómica e conservação, sempre com foco no impacto social.</p>
+            <div class="investigacao__highlight">
+              <strong>Entomologia</strong>
+              <span>Foco na interdisciplinaridade e na preservação do ecossistema insular.</span>
+            </div>
+          </div>
+          <div class="investigacao__areas">
+            <div class="area-pill"><span>🦋</span> Ecologia Humana</div>
+            <div class="area-pill"><span>🧬</span> Genómica de Referência</div>
+            <div class="area-pill"><span>🔍</span> Taxonomia</div>
+            <div class="area-pill"><span>🌿</span> Conservação</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="colecoes" id="projetos" style="padding-top: 0; padding-bottom: 40px;">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag" style="color: #D58522;">Portfólio</span>
+          <h2 style="color: #1a2e21;">Projetos em <em>Destaque</em></h2>
+        </div>
+        
+        <div class="colecoes__cards">
+          <div class="glass-card card-twins">
+            <div class="glass-card__top" >
+              <span class="glass-card__icon">🐝</span>
+              <h3 style="color: #f8e621;">Nature Twins</h3>
+            </div>
+            <p>O projeto NatureTwins – Turismo Restaurativo e Sustentável com Gémeos Digitais da Madeira – visa promover um modelo de turismo sustentável e inclusivo na ilha da Madeira através da tecnologia Digital Twin.</p>
+            <a href="./nature-twins.html" target="_blank" class="glass-card__link">Saber mais →</a>
+          </div>
+
+          <div class="glass-card card-arcade">
+            <div class="glass-card__top">
+              <span class="glass-card__icon">🐝</span>
+              <h3 style="color: #f8e621;">ARCADE</h3>
+            </div>
+            <p>Melhoria da componente chave para o desenvolvimento da taxonomia e conservação dos insetos polinizadores – as coleções de referência.</p>
+            <a href="https://www.pollinet.pt/arcade" target="_blank" class="glass-card__link">Saber mais →</a>
+          </div>
+
+          <div class="glass-card card-mib">
+            <div class="glass-card__top">
+              <span class="glass-card__icon">🧬</span>
+              <h3 style="color: #f8e621;">MIB</h3>
+            </div>
+            <p>Madeiran Insects Bioblitz: Criação de uma coleção de genomas de referência para espécies do arquipélago da Madeira.</p>
+            <a href="./mib.html" target="_blank" class="glass-card__link">Saber mais →</a>
+          </div>
+
+          <div class="glass-card card-insetos">
+            <div class="glass-card__top">
+              <span class="glass-card__icon">📸</span>
+              <h3 style="color: #f8e621;">Insetos da Madeira</h3>
+            </div>
+            <p>Sensibilização da população para a importância dos insetos através do envolvimento da comunidade na ciência cidadã.</p>
+            <a href="./madeira-insect-project.html" target="_blank" class="glass-card__link">Saber mais →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOVA SECÇÃO: PESQUISA DE ARTIGOS E DOCUMENTOS -->
+    <section class="documentos" id="artigos" style="padding: 60px 0; background: rgba(255, 255, 255, 0.02); border-top: 1px solid rgba(255, 255, 255, 0.05);">
+      <div class="container">
+        <div class="section-head" style="margin-bottom: 40px;">
+          <span class="section-tag">Repositório</span>
+          <h2>Artigos e <em>Documentação</em></h2>
+          <p style="color: rgba(0, 0, 0, 0.7); max-width: 600px; margin-top: 10px;">Consulte e faça o download de publicações científicas, relatórios, manuais e e-books em formato PDF produzidos ou apoiados pela UMACI.</p>
+        </div>
+
+        <!-- Barra de Procura e Filtros -->
+        <div style="padding: 10px 0; margin-bottom: 30px;">
+  <div style="display: flex; gap: 15px; flex-wrap: wrap; align-items: center;">
+    <div style="flex: 1; min-width: 280px; position: relative;">
+      <input type="text" id="docSearch" placeholder="Pesquisar por título, autor ou palavra-chave..." style="width: 100%; padding: 14px 20px; background: rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; color: #1a2e21; font-family: inherit; font-size: 1rem; outline: none; transition: border 0.3s;" onfocus="this.style.borderColor='#8FD053'" onblur="this.style.borderColor='rgba(0,0,0,0.1)'">
+    </div>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap;" id="filterButtons">
+      <button class="filter-btn active" data-filter="all" style="padding: 10px 20px; background: #8FD053; border: none; border-radius: 30px; color: #1a2e21; cursor: pointer; font-weight: 500; transition: all 0.3s;">Todos</button>
+      <button class="filter-btn" data-filter="artigo" style="padding: 10px 20px; background: rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.05); border-radius: 30px; color: #1a2e21; cursor: pointer; font-weight: 500; transition: all 0.3s;">Artigos</button>
+      <button class="filter-btn" data-filter="tese" style="padding: 10px 20px; background: rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.05); border-radius: 30px; color: #1a2e21; cursor: pointer; font-weight: 500; transition: all 0.3s;">Teses</button>
+      <button class="filter-btn" data-filter="manual" style="padding: 10px 20px; background: rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.05); border-radius: 30px; color: #1a2e21; cursor: pointer; font-weight: 500; transition: all 0.3s;">Manuais e Guias</button>
+    </div>
+  </div>
+</div>
+
+        <!-- Grelha de Resultados (Lista de PDFs) -->
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px;" id="docsGrid">
+
+  <!-- Documento 1: Artigo Científico -->
+  <div class="glass-card doc-item" data-type="artigo" style="display: flex; flex-direction: column; justify-content: space-between; padding: 25px; transition: transform 0.3s;">
+    <div>
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
+        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; padding: 4px 10px; background: rgba(143, 208, 83, 0.15); color: #8FD053; border-radius: 6px; font-weight: 600;">Artigo Científico</span>
+        <span style="font-size: 0.85rem; color: rgba(31, 143, 0, 0.5);">PDF (4.2 MB)</span>
+      </div>
+      <h3 class="doc-title" style="font-size: 1.2rem; color: #089800; margin-bottom: 8px; font-family: 'DM Sans', sans-serif;">Catálogo Preliminar dos Hemípteros da Macaronésia</h3>
+      <p class="doc-author" style="font-size: 0.9rem; color: rgb(120, 160, 0); margin-bottom: 12px;">Silva, J., Agostinho, J. &amp; Santos, R. (2024)</p>
+      <p style="font-size: 0.95rem; color: rgba(0, 0, 0, 0.8); margin-bottom: 20px; line-height: 1.5;">Um estudo detalhado focado na distribuição e novos registos de Hemíptera no arquipélago da Madeira.</p>
+    </div>
+    <a href="./assets/documents/catalogo_hemipteros_2024.pdf" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #8FD053; text-decoration: none; font-weight: 500; font-size: 0.95rem;">
+      <span>📥 Baixar PDF</span>
+    </a>
+  </div>
+
+  <!-- Documento 2: Guia Prático -->
+  <div class="glass-card doc-item" data-type="manual" style="display: flex; flex-direction: column; justify-content: space-between; padding: 25px; transition: transform 0.3s;">
+    <div>
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
+        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; padding: 4px 10px; background: rgba(213, 133, 34, 0.15); color: #D58522; border-radius: 6px; font-weight: 600;">Guia Prático</span>
+        <span style="font-size: 0.85rem; color: rgb(255, 153, 0);">PDF (8.7 MB)</span>
+      </div>
+      <h3 class="doc-title" style="font-size: 1.2rem; color: #e9984d; margin-bottom: 8px; font-family: 'DM Sans', sans-serif;">Guia de Campo: Insetos Polinizadores da Madeira</h3>
+      <p class="doc-author" style="font-size: 0.9rem; color: rgb(180, 140, 20); margin-bottom: 12px;">Equipa Editorial UMACI (2025)</p>
+      <p style="font-size: 0.95rem; color: rgba(0, 0, 0, 0.8); margin-bottom: 20px; line-height: 1.5;">Manual ilustrado desenvolvido no âmbito do projeto ARCADE para identificação rápida de polinizadores insulares.</p>
+    </div>
+    <a href="./assets/documents/guia_polinizadores_madeira.pdf" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #D58522; text-decoration: none; font-weight: 500; font-size: 0.95rem;">
+      <span>📥 Baixar PDF</span>
+    </a>
+  </div>
+
+  <!-- Documento 3: Tese de Mestrado -->
+  <div class="glass-card doc-item" data-type="tese" style="display: flex; flex-direction: column; justify-content: space-between; padding: 25px; transition: transform 0.3s;">
+    <div>
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
+        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; padding: 4px 10px; background: rgba(206, 208, 83, 0.15); color: #a4a622; border-radius: 6px; font-weight: 600;">Tese de Mestrado</span>
+        <span style="font-size: 0.85rem; color: rgb(186, 186, 1);">PDF (3.1 MB)</span>
+      </div>
+      <h3 class="doc-title" style="font-size: 1.2rem; color: #cdd100; margin-bottom: 8px; font-family: 'DM Sans', sans-serif;">Digitalização e Preservação Digital de Acervos Entomológicos</h3>
+      <p class="doc-author" style="font-size: 0.9rem; color: rgb(150, 150, 20); margin-bottom: 12px;">Fernandes, M. (2023)</p>
+      <p style="font-size: 0.95rem; color: rgba(0, 0, 0, 0.8); margin-bottom: 20px; line-height: 1.5;">Análise metodológica baseada no programa de salvaguarda estruturado na Universidade da Madeira.</p>
+    </div>
+    <a href="./assets/documents/tese_digitalizacao_acervos.pdf" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #CED053; text-decoration: none; font-weight: 500; font-size: 0.95rem;">
+      <span>📥 Baixar PDF</span>
+    </a>
+  </div>
+
+  <!-- Documento 4 (Duplicado - Pronto a alterar) -->
+  <div class="glass-card doc-item" data-type="tese" style="display: flex; flex-direction: column; justify-content: space-between; padding: 25px; transition: transform 0.3s;">
+    <div>
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
+        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; padding: 4px 10px; background: rgba(206, 208, 83, 0.15); color: #a4a622; border-radius: 6px; font-weight: 600;">Tese de Mestrado</span>
+        <span style="font-size: 0.85rem; color: rgb(186, 186, 1);">PDF (3.1 MB)</span>
+      </div>
+      <h3 class="doc-title" style="font-size: 1.2rem; color: #cdd100; margin-bottom: 8px; font-family: 'DM Sans', sans-serif;">Digitalização e Preservação Digital de Acervos Entomológicos</h3>
+      <p class="doc-author" style="font-size: 0.9rem; color: rgb(150, 150, 20); margin-bottom: 12px;">Fernandes, M. (2023)</p>
+      <p style="font-size: 0.95rem; color: rgba(0, 0, 0, 0.8); margin-bottom: 20px; line-height: 1.5;">Análise metodológica baseada no programa de salvaguarda estruturado na Universidade da Madeira.</p>
+    </div>
+    <a href="./assets/documents/tese_digitalizacao_acervos.pdf" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #CED053; text-decoration: none; font-weight: 500; font-size: 0.95rem;">
+      <span>📥 Baixar PDF</span>
+    </a>
+  </div>
+
+  <!-- Documento 5 (Duplicado - Pronto a alterar) -->
+  <div class="glass-card doc-item" data-type="tese" style="display: flex; flex-direction: column; justify-content: space-between; padding: 25px; transition: transform 0.3s;">
+    <div>
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
+        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; padding: 4px 10px; background: rgba(206, 208, 83, 0.15); color: #a4a622; border-radius: 6px; font-weight: 600;">Tese de Mestrado</span>
+        <span style="font-size: 0.85rem; color: rgb(186, 186, 1);">PDF (3.1 MB)</span>
+      </div>
+      <h3 class="doc-title" style="font-size: 1.2rem; color: #cdd100; margin-bottom: 8px; font-family: 'DM Sans', sans-serif;">Digitalização e Preservação Digital de Acervos Entomológicos</h3>
+      <p class="doc-author" style="font-size: 0.9rem; color: rgb(150, 150, 20); margin-bottom: 12px;">Fernandes, M. (2023)</p>
+      <p style="font-size: 0.95rem; color: rgba(0, 0, 0, 0.8); margin-bottom: 20px; line-height: 1.5;">Análise metodológica baseada no programa de salvaguarda estruturado na Universidade da Madeira.</p>
+    </div>
+    <a href="./assets/documents/tese_digitalizacao_acervos.pdf" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #CED053; text-decoration: none; font-weight: 500; font-size: 0.95rem;">
+      <span>📥 Baixar PDF</span>
+    </a>
+  </div>
+
+  <!-- Documento 6 (Duplicado - Pronto a alterar) -->
+  <div class="glass-card doc-item" data-type="tese" style="display: flex; flex-direction: column; justify-content: space-between; padding: 25px; transition: transform 0.3s;">
+    <div>
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
+        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; padding: 4px 10px; background: rgba(206, 208, 83, 0.15); color: #a4a622; border-radius: 6px; font-weight: 600;">Tese de Mestrado</span>
+        <span style="font-size: 0.85rem; color: rgb(186, 186, 1);">PDF (3.1 MB)</span>
+      </div>
+      <h3 class="doc-title" style="font-size: 1.2rem; color: #cdd100; margin-bottom: 8px; font-family: 'DM Sans', sans-serif;">Digitalização e Preservação Digital de Acervos Entomológicos</h3>
+      <p class="doc-author" style="font-size: 0.9rem; color: rgb(150, 150, 20); margin-bottom: 12px;">Fernandes, M. (2023)</p>
+      <p style="font-size: 0.95rem; color: rgba(0, 0, 0, 0.8); margin-bottom: 20px; line-height: 1.5;">Análise metodológica baseada no programa de salvaguarda estruturado na Universidade da Madeira.</p>
+    </div>
+    <a href="./assets/documents/tese_digitalizacao_acervos.pdf" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #CED053; text-decoration: none; font-weight: 500; font-size: 0.95rem;">
+      <span>📥 Baixar PDF</span>
+    </a>
+  </div>
+
+</div>
+
+        <!-- Mensagem caso nenhum documento coincida com a pesquisa -->
+        <div id="noResults" style="display: none; text-align: center; padding: 40px; color: rgba(255,255,255,0.5);">
+          <span style="font-size: 2rem;">🔍</span>
+          <p style="margin-top: 10px;">Nenhum documento ou PDF encontrado para os termos introduzidos.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <strong>UMACI</strong>
+          </div>
+          <p>Coleção de Insetos da Universidade da Madeira. Preservando a biodiversidade através da ciência.</p>
+        </div>
+        <div class="footer__col">
+          <strong>Links Úteis</strong>
+          <a href="./contacts.html">Contactos</a>
+          <a href="./info.html">Informações</a>
+          <a href="./field_trips.html">Saídas de Campo</a>
+        </div>
+        <div class="footer__col">
+          <strong>Instituição</strong>
+          <a href="https://www.uma.pt" target="_blank">Universidade da Madeira</a>
+          <a href="./investigation.html">Investigação</a>
+          <a href="./volunteering _options.html">Voluntariado</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <script>document.write(new Date().getFullYear())</script> JÉSSICA AGOSTINHO • COLEÇÃO DE INSETOS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+  <!-- SCRIPT PARA FILTRAGEM E PESQUISA EM TEMPO REAL -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('docSearch');
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const docItems = document.querySelectorAll('.doc-item');
+      const noResults = document.getElementById('noResults');
+      
+      let currentFilter = 'all';
+      let currentSearchTerm = '';
+
+      function filterDocs() {
+        let visibleCount = 0;
+
+        docItems.forEach(item => {
+          const title = item.querySelector('.doc-title').textContent.toLowerCase();
+          const author = item.querySelector('.doc-author').textContent.toLowerCase();
+          const type = item.getAttribute('data-type');
+          
+          const matchesFilter = (currentFilter === 'all' || type === currentFilter);
+          const matchesSearch = (title.includes(currentSearchTerm) || author.includes(currentSearchTerm));
+
+          if (matchesFilter && matchesSearch) {
+            item.style.display = 'flex';
+            visibleCount++;
+          } else {
+            item.style.display = 'none';
+          }
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      // Input de Pesquisa
+      searchInput.addEventListener('input', function(e) {
+        currentSearchTerm = e.target.value.toLowerCase();
+        filterDocs();
+      });
+
+      // Botões de Filtro
+      filterButtons.forEach(btn => {
+  btn.addEventListener('click', function() {
+    filterButtons.forEach(b => {
+      b.classList.remove('active');
+      b.style.background = 'rgba(0, 0, 0, 0.05)'; // Fundo cinza suave para os inativos
+      b.style.color = '#1a2e21';                  // Mantém o texto verde escuro
+    });
+
+    this.classList.add('active');
+    this.style.background = '#8FD053';            // Fundo verde claro no botão ativo
+    this.style.color = '#1a2e21';                  // Mantém o texto verde escuro no ativo
+
+    currentFilter = this.getAttribute('data-filter');
+    filterDocs();
+  });
+});
+    });
+  </script>
+</body>
+</html>

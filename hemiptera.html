@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coleção Hemiptera Auchenorrhyncha — UMACI</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <img src="./assets/images/logo.png" class="logo" alt="logo" />
+    <ul class="nav__links" id="navLinks">
+      <li><a href="./index.html">Início</a></li>
+      <li class="dropdown">
+        <a href="#colecoes" class="dropdown__title">Coleções</a>
+      <ul class="dropdown__menu">
+        <li><a href="./pedagogical.html">Pedagógica</a></li>
+        <li><a href="./medical_veterinary.html">Médica e Veterinária</a></li>
+        <li><a href="./hemiptera.html">Hemíptera</a></li>
+      </ul>
+    </li>
+      <li><a href="./investigation.html">Investigação</a></li>
+      <li><a href="./education.html">Ensino</a></li>
+      <li><a href="./volunteering _options.html">Voluntariado</a></li>
+      <li><a href="./team.html">Equipa</a></li>
+    </ul>
+    <a href="#contacto" class="nav__cta">Contacto</a>
+    <button class="nav__toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="hero" style="min-height: 70vh;">
+    <div class="hero__parallax">
+      <img src="./assets/images/gafanhoto.png" alt="Inseto Hemiptera Auchenorrhyncha" />
+    </div>
+    <div class="hero__glass">
+      <span class="hero__kicker">Desde 1992</span>
+      <h1>Coleção de <em>Hemiptera Auchenorrhyncha</em></h1>
+      <p>Um acervo especializado em sistemática e ecologia, com particular destaque para a família <em>Cicadellidae</em>.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="sobre" id="sobre">
+      <div class="container">
+        <div class="sobre__grid">
+          <div class="sobre__text">
+            <span class="section-tag">História e Ciência</span>
+            <h2>Investigação Contínua</h2>
+            <p>Esta coleção surgiu como resultado de investigações científicas profundas. Os primeiros espécimes datam de <strong>1992</strong>, e o acervo continua a crescer através de campanhas de campo e estudos genéticos.</p>
+            <p>A maioria dos exemplares encontra-se preparada e fixada a seco, servindo de base para estudos de biologia, ecologia e sistemática.</p>
+            
+            <div class="sobre__nums">
+              <div class="num-card"><strong>1992</strong><span>Ano de Fundação</span></div>
+              <div class="num-card"><strong>Cicadellidae</strong><span>Família Predominante</span></div>
+            </div>
+          </div>
+          <div class="investigacao__areas">
+            <div class="area-pill"><span>🔬</span> Sistemática e Biologia</div>
+            <div class="area-pill"><span>🧬</span> Estudos de Genética</div>
+            <div class="area-pill"><span>🌿</span> Fixação a Seco</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="galeria" style="background: #f9f9f9; padding: 4rem 0;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Galeria de Espécimes</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                <img src="./assets/images/abelha.jpeg" alt="Galeria 1" style="width:100%; border-radius: 8px;">
+                <img src="./assets/images/abelha.jpeg" alt="Galeria 2" style="width:100%; border-radius: 8px;">
+                <img src="./assets/images/abelha.jpeg" alt="Galeria 3" style="width:100%; border-radius: 8px;">
+                <img src="./assets/images/abelha.jpeg" alt="Galeria 4" style="width:100%; border-radius: 8px;">
+            </div>
+        </div>
+    </section>
+
+    <section class="geografia" style="padding: 4rem 0;">
+        <div class="container" style="text-align: center;">
+            <span class="section-tag">Âmbito Territorial</span>
+            <h2>Área Geográfica</h2>
+            <p style="max-width: 800px; margin: 0 auto 2rem;">Esta coleção abrange uma vasta área que compreende os arquipélagos da <strong>Madeira e Açores</strong>, bem como diversas localidades de <strong>Portugal Continental</strong>.</p>
+            <img src="./assets/images/mapa-colecao-pedagogica.jpg" alt="Mapa de Abrangência" style="max-width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        </div>
+    </section>
+
+    <section class="sobre">
+    <div class="container text-center" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <h2>Docente <em>Responsável</em></h2>
+      <span class="section-tag">Dora Pombo</span>
+        
+      <div style="margin-top: 40px; display: flex; flex-direction: column; align-items: center;">
+          
+        <img src="./assets/images/imagem%20prof%20dora.png" class="img-fluid rounded shadow" alt="Fotografia da Professora Responsável" style="max-width: 600px; width: 100%; border-radius: 20px;">
+        
+        <div style="display: flex; justify-content: center; gap: 15px; margin-top: 1.5rem; font-size: 1.3rem;">
+            <a href="mailto:ana.silva@universidade.pt" style="color: #333;" aria-label="Enviar Email"><i class="bi bi-envelope-fill"></i></a>
+            <a href="#" style="color: #A6CE39;" aria-label="ORCID"><i class="bi bi-info-circle-fill"></i></a>
+            <a href="#" style="color: #333;" aria-label="ResearchGate"><i class="bi bi-r-square"></i></a>
+            <a href="#" style="color: #0077b5;" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+</section> 
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+            <strong>UMACI</strong>
+            <p>Especialistas em biodiversidade insular.</p>
+            <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 1rem;">
+                &copy; <script>document.write(new Date().getFullYear())</script> JÉSSICA AGOSTINHO
+            </p>
+        </div>
+        <div class="footer__col">
+          <strong>Coleções</strong>
+          <a href="pedagogical.html">Pedagógica</a>
+          <a href="medical_veterinary.html">Médica e Veterinária</a>
+          <a href="hemiptera.html">Hemiptera</a>
+        </div>
+        <div class="footer__col">
+            <strong>Explorar</strong>
+            <a href="./contacts.html">Contactos</a>
+            <a href="./info.html">Informações</a>
+            <a href="./field_trips.html">Saídas de Campo</a>
+          </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
