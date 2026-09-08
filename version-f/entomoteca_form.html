@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Candidatura ao Voluntariado Presencial — UMACI</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- MENU DE NAVEGAÇÃO -->
+  <nav class="nav" id="nav">
+    <img src="./assets/images/logo.png" class="logo" alt="logo" />
+    <ul class="nav__links" id="navLinks">
+      <li><a href="./index.html">Início</a></li>
+      <li class="dropdown">
+        <a href="#colecoes" class="dropdown__title">Coleções</a>
+      <ul class="dropdown__menu">
+        <li><a href="./pedagogical.html">Pedagógica</a></li>
+        <li><a href="./medical_veterinary.html">Médica e Veterinária</a></li>
+        <li><a href="./hemiptera.html">Hemíptera</a></li>
+      </ul>
+    </li>
+      <li><a href="./investigation.html">Investigação</a></li>
+      <li><a href="./education.html">Ensino</a></li>
+      <li><a href="./volunteering _options.html">Voluntariado</a></li>
+      <li><a href="./team.html">Equipa</a></li>
+    </ul>
+    <a href="#contacto" class="nav__cta">Contacto</a>
+    <button class="nav__toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- SECÇÃO DO FORMULÁRIO -->
+  <main style="padding-top: 120px; padding-bottom: 80px;">
+    <section class="candidatura" id="candidatura-form">
+      <div class="container" style="max-width: 800px;">
+        
+        <div class="section-head" style="margin-bottom: 40px; text-align: center;">
+          <span class="section-tag">Formulário Presencial</span>
+          <h2>Candidatura à <em>Entomoteca</em></h2>
+          <p style="color: #1a2e21; opacity: 0.8; max-width: 600px; margin: 10px auto 0 auto;">
+            Inscreve-te para trabalhar diretamente com o acervo físico no Campus da Penteada. Preenche os teus dados abaixo e entraremos em contacto para agendar a tua integração.
+          </p>
+        </div>
+
+        <form style="background: rgba(255,255,255,0.03); backdrop-filter: blur(10px); border: 1px solid rgba(0,0,0,0.08); padding: 40px; border-radius: 20px; color: #1a2e21; box-shadow: 0 10px 30px rgba(0,0,0,0.02);">
+          
+          <!-- Nome e E-mail -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 20px;">
+            <div>
+              <label for="nome" style="display: block; font-weight: 500; margin-bottom: 8px; color: #1a2e21;">Nome Completo</label>
+              <input type="text" id="nome" required placeholder="O teu nome" style="width: 100%; padding: 14px 20px; background: rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.08); border-radius: 12px; color: #1a2e21; font-family: inherit; font-size: 1rem; outline: none; transition: border 0.3s;" onfocus="this.style.borderColor='#8FD053'" onblur="this.style.borderColor='rgba(0,0,0,0.08)'">
+            </div>
+            <div>
+              <label for="email" style="display: block; font-weight: 500; margin-bottom: 8px; color: #1a2e21;">E-mail</label>
+              <input type="email" id="email" required placeholder="exemplo@email.com" style="width: 100%; padding: 14px 20px; background: rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.08); border-radius: 12px; color: #1a2e21; font-family: inherit; font-size: 1rem; outline: none; transition: border 0.3s;" onfocus="this.style.borderColor='#8FD053'" onblur="this.style.borderColor='rgba(0,0,0,0.08)'">
+            </div>
+          </div>
+
+          <!-- Áreas de Atuação no Laboratório -->
+          <div style="margin-bottom: 25px;">
+            <label style="display: block; font-weight: 500; margin-bottom: 12px; color: #1a2e21;">Quais as atividades práticas que mais te interessam?</label>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                <input type="checkbox" name="atividades" value="preparacao" style="accent-color: #8FD053; width: 18px; height: 18px;">
+                <span style="color: #1a2e21;">🏷️ Preparação física e etiquetagem de insetos</span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                <input type="checkbox" name="atividades" value="conservacao" style="accent-color: #8FD053; width: 18px; height: 18px;">
+                <span style="color: #1a2e21;">🧪 Manutenção e conservação de espécimes em meio líquido (álcool)</span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                <input type="checkbox" name="atividades" value="organizacao" style="accent-color: #8FD053; width: 18px; height: 18px;">
+                <span style="color: #1a2e21;">📦 Organização e curadoria de gavetas taxonómicas</span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                <input type="checkbox" name="atividades" value="morfologia" style="accent-color: #8FD053; width: 18px; height: 18px;">
+                <span style="color: #1a2e21;">📐 Auxílio em medições morfológicas com lupa binocular</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Disponibilidade Semanal (Dias e Turno) -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 25px;">
+            <div>
+              <label for="dia_semana" style="display: block; font-weight: 500; margin-bottom: 8px; color: #1a2e21;">Dias preferidos (Segunda a Sexta)</label>
+              <input type="text" id="dia_semana" placeholder="Ex: Terças e Quintas" style="width: 100%; padding: 14px 20px; background: rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.08); border-radius: 12px; color: #1a2e21; font-family: inherit; font-size: 1rem; outline: none; transition: border 0.3s;" onfocus="this.style.borderColor='#8FD053'" onblur="this.style.borderColor='rgba(0,0,0,0.08)'">
+            </div>
+            <div>
+              <label for="turno" style="display: block; font-weight: 500; margin-bottom: 8px; color: #1a2e21;">Turno de preferência</label>
+              <select id="turno" style="width: 100%; padding: 14px 20px; background: rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.08); border-radius: 12px; color: #1a2e21; font-family: inherit; font-size: 1rem; outline: none; transition: border 0.3s; cursor: pointer;" onfocus="this.style.borderColor='#8FD053'" onblur="this.style.borderColor='rgba(0,0,0,0.08)'">
+                <option value="manha">Manhã (09:00 - 13:00)</option>
+                <option value="tarde">Tarde (14:00 - 18:00)</option>
+                <option value="dia_inteiro">Dia Inteiro</option>
+                <option value="flexivel">Horário flexível a combinar</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Motivação, Curso ou Experiência -->
+          <div style="margin-bottom: 30px;">
+            <label for="mensagem" style="display: block; font-weight: 500; margin-bottom: 8px; color: #1a2e21;">Formação académica ou motivação</label>
+            <textarea id="mensagem" rows="5" placeholder="Estudas Biologia ou áreas relacionadas? Partilha connosco o teu interesse em trabalhar de perto com a coleção entomológica da UMACI." style="width: 100%; padding: 14px 20px; background: rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.08); border-radius: 12px; color: #1a2e21; font-family: inherit; font-size: 1rem; outline: none; resize: vertical; transition: border 0.3s;" onfocus="this.style.borderColor='#8FD053'" onblur="this.style.borderColor='rgba(0,0,0,0.08)'"></textarea>
+          </div>
+
+          <!-- Botão de Envio (Verde Claro com letras Verde Escuro) -->
+          <div style="text-align: center;">
+            <button type="submit" style="padding: 15px 40px; background: #8FD053; border: none; border-radius: 30px; color: #1a2e21; cursor: pointer; font-weight: 700; font-size: 1rem; transition: all 0.3s; text-transform: uppercase; letter-spacing: 1px;">
+              Enviar Candidatura Presencial
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ (Igual ao da tua página original) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <strong>UMACI</strong>
+          </div>
+          <p>Coleção de Insetos da Universidade da Madeira. Preservando a biodiversidade através da ciência.</p>
+        </div>
+        <div class="footer__col">
+          <strong>Links Úteis</strong>
+          <a href="./contacts.html">Contactos</a>
+          <a href="./info.html">Informações</a>
+          <a href="./field_trips.html">Saídas de Campo</a>
+        </div>
+        <div class="footer__col">
+          <strong>Instituição</strong>
+          <a href="https://www.uma.pt" target="_blank">Universidade da Madeira</a>
+          <a href="./investigation.html">Investigação</a>
+          <a href="./volunteering _options.html">Voluntariado</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <script>document.write(new Date().getFullYear())</script> JÉSSICA AGOSTINHO • COLEÇÃO DE INSETOS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

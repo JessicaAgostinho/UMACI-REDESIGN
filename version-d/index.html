@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UMACI — Coleção de Insetos</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav__logo">UMACI</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#colecoes">Coleções</a></li>
+      <li><a href="#investigacao">Investigação</a></li>
+      <li><a href="#equipa">Equipa</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg">
+      <img src="https://entomoteca.web.uma.pt/imagens/bg_hero.jpg" alt="" onerror="this.style.display='none'" />
+    </div>
+    <div class="hero__content">
+      <span class="hero__label">Universidade da Madeira</span>
+      <h1 class="hero__title">
+        <em>Insetos.</em><br />
+        Ciência.<br />
+        Descoberta.
+      </h1>
+      <p class="hero__sub">A maior coleção entomológica da Macaronésia — preservando biodiversidade desde 1995.</p>
+      <div class="hero__actions">
+        <a href="#colecoes" class="btn btn--white">Explorar coleções</a>
+        <a href="#investigacao" class="btn btn--ghost">Ver investigação</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- NUMBERS -->
+  <section class="numbers">
+    <div class="numbers__grid">
+      <div class="numbers__item" data-animate>
+        <span class="numbers__val" data-target="250000">0</span>
+        <span class="numbers__unit">+</span>
+        <p>espécimes</p>
+      </div>
+      <div class="numbers__item" data-animate>
+        <span class="numbers__val" data-target="4200">0</span>
+        <span class="numbers__unit">+</span>
+        <p>espécies</p>
+      </div>
+      <div class="numbers__item" data-animate>
+        <span class="numbers__val" data-target="28">0</span>
+        <span class="numbers__unit"></span>
+        <p>anos de investigação</p>
+      </div>
+      <div class="numbers__item" data-animate>
+        <span class="numbers__val" data-target="6">0</span>
+        <span class="numbers__unit"></span>
+        <p>coleções temáticas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="sobre__inner">
+      <div class="sobre__text">
+        <span class="label">Sobre</span>
+        <h2>Preservar o <br /><strong>invisível</strong></h2>
+        <p>A UMACI — Unidade de Investigação em Entomologia da Universidade da Madeira — é um centro de excelência dedicado ao estudo, catalogação e preservação da fauna entomológica das ilhas atlânticas.</p>
+        <p>Com foco especial na Macaronésia, a nossa coleção documenta espécies endémicas únicas no mundo, oferecendo recursos inestimáveis à ciência global.</p>
+        <a href="#colecoes" class="btn btn--outline">Ver coleções →</a>
+      </div>
+      <div class="sobre__visual">
+        <div class="sobre__img-wrap">
+          <img src="https://entomoteca.web.uma.pt/imagens/inseto1.jpg" alt="Espécime de inseto" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80'" />
+        </div>
+        <div class="sobre__tag">
+          <strong>Macaronésia</strong>
+          <span>Foco principal</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLEÇÕES -->
+  <section class="colecoes" id="colecoes">
+    <div class="container">
+      <span class="label">Coleções</span>
+      <h2>O que preservamos</h2>
+      <div class="colecoes__grid">
+        <article class="colecao-card" data-animate>
+          <div class="colecao-card__num">01</div>
+          <div class="colecao-card__body">
+            <h3>Coleção Pedagógica</h3>
+            <p>Exemplares organizados para fins educativos, apoiando cursos universitários e formação científica nas ciências biológicas.</p>
+            <a href="https://entomoteca.web.uma.pt/colecao_pedagogica.php" target="_blank" class="colecao-card__link">Ver coleção →</a>
+          </div>
+          <div class="colecao-card__img">
+            <img src="https://entomoteca.web.uma.pt/imagens/pedagogica.jpg" alt="Coleção Pedagógica" onerror="this.src='https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=400&q=70'" />
+          </div>
+        </article>
+        <article class="colecao-card" data-animate>
+          <div class="colecao-card__num">02</div>
+          <div class="colecao-card__body">
+            <h3>Coleção Médica</h3>
+            <p>Vetores e espécies de relevância para a saúde pública, fundamentais para a epidemiologia e o controlo de doenças.</p>
+            <a href="https://entomoteca.web.uma.pt/colecao_medica.php" target="_blank" class="colecao-card__link">Ver coleção →</a>
+          </div>
+          <div class="colecao-card__img">
+            <img src="https://entomoteca.web.uma.pt/imagens/medica.jpg" alt="Coleção Médica" onerror="this.src='https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=400&q=70'" />
+          </div>
+        </article>
+        <article class="colecao-card" data-animate>
+          <div class="colecao-card__num">03</div>
+          <div class="colecao-card__body">
+            <h3>Hemiptera</h3>
+            <p>Coleção especializada na ordem Hemiptera — percevejos, afídeos e cigarras — com especial enfoque nas espécies macaronésias.</p>
+            <a href="https://entomoteca.web.uma.pt/colecao_hemiptera.php" target="_blank" class="colecao-card__link">Ver coleção →</a>
+          </div>
+          <div class="colecao-card__img">
+            <img src="https://entomoteca.web.uma.pt/imagens/hemiptera.jpg" alt="Hemiptera" onerror="this.src='https://images.unsplash.com/photo-1444492417251-9c84a5fa18e0?w=400&q=70'" />
+          </div>
+        </article>
+        <article class="colecao-card" data-animate>
+          <div class="colecao-card__num">04</div>
+          <div class="colecao-card__body">
+            <h3>Insetos da Madeira</h3>
+            <p>Atlas entomológico da ilha da Madeira — registo sistemático da biodiversidade de insetos do arquipélago.</p>
+            <a href="https://entomoteca.web.uma.pt/insetos_madeira.php" target="_blank" class="colecao-card__link">Ver coleção →</a>
+          </div>
+          <div class="colecao-card__img">
+            <img src="https://entomoteca.web.uma.pt/imagens/madeira.jpg" alt="Insetos da Madeira" onerror="this.src='https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&q=70'" />
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVESTIGAÇÃO -->
+  <section class="investigacao" id="investigacao">
+    <div class="investigacao__inner">
+      <div class="investigacao__visual">
+        <img src="https://entomoteca.web.uma.pt/imagens/lab.jpg" alt="Laboratório" onerror="this.src='https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=700&q=80'" />
+        <div class="investigacao__badge">
+          <strong>Publicações</strong>
+          <span>+120 artigos científicos</span>
+        </div>
+      </div>
+      <div class="investigacao__text">
+        <span class="label">Investigação</span>
+        <h2>Ciência que <strong>importa</strong></h2>
+        <p>A nossa equipa publica regularmente em revistas de referência internacional, contribuindo para o conhecimento da biodiversidade insular e para políticas de conservação.</p>
+        <ul class="investigacao__list">
+          <li>Taxonomia e sistemática de insetos</li>
+          <li>Biogeografia insular atlântica</li>
+          <li>Espécies invasoras e ameaçadas</li>
+          <li>Entomologia médica e veterinária</li>
+        </ul>
+        <a href="https://entomoteca.web.uma.pt/investigacao.php" target="_blank" class="btn btn--outline">Publicações →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPA -->
+  <section class="equipa" id="equipa">
+    <div class="container">
+      <span class="label">Pessoas</span>
+      <h2>A nossa equipa</h2>
+      <div class="equipa__grid">
+        <div class="membro" data-animate>
+          <div class="membro__avatar">
+            <img src="https://entomoteca.web.uma.pt/imagens/paulo_borges.jpg" alt="Paulo Borges" onerror="this.src='https://ui-avatars.com/api/?name=Paulo+Borges&background=1a1a1a&color=fff&size=200'" />
+          </div>
+          <h4>Paulo Borges</h4>
+          <span>Investigador Principal</span>
+        </div>
+        <div class="membro" data-animate>
+          <div class="membro__avatar">
+            <img src="https://entomoteca.web.uma.pt/imagens/membro2.jpg" alt="Investigadora" onerror="this.src='https://ui-avatars.com/api/?name=Ana+Costa&background=1a1a1a&color=fff&size=200'" />
+          </div>
+          <h4>Ana Costa</h4>
+          <span>Entomologista</span>
+        </div>
+        <div class="membro" data-animate>
+          <div class="membro__avatar">
+            <img src="https://entomoteca.web.uma.pt/imagens/membro3.jpg" alt="Investigador" onerror="this.src='https://ui-avatars.com/api/?name=Rui+Silva&background=1a1a1a&color=fff&size=200'" />
+          </div>
+          <h4>Rui Silva</h4>
+          <span>Taxonomista</span>
+        </div>
+        <div class="membro" data-animate>
+          <div class="membro__avatar">
+            <img src="https://entomoteca.web.uma.pt/imagens/membro4.jpg" alt="Investigadora" onerror="this.src='https://ui-avatars.com/api/?name=Marta+Pereira&background=1a1a1a&color=fff&size=200'" />
+          </div>
+          <h4>Marta Pereira</h4>
+          <span>Investigadora</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto" id="contacto">
+    <div class="contacto__inner">
+      <div class="contacto__text">
+        <span class="label">Contacto</span>
+        <h2>Fala connosco</h2>
+        <p>Investigadores, estudantes ou entusiastas — estamos disponíveis para colaborações, cedência de material e visitas.</p>
+        <div class="contacto__info">
+          <div><strong>Email</strong><span>umaci@uma.pt</span></div>
+          <div><strong>Telefone</strong><span>+351 291 705 000</span></div>
+          <div><strong>Morada</strong><span>Universidade da Madeira, Campus da Penteada, 9020-105 Funchal</span></div>
+        </div>
+      </div>
+      <form class="contacto__form" id="contactForm">
+        <input type="text" name="nome" placeholder="Nome" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="mensagem" placeholder="Mensagem" rows="5" required></textarea>
+        <button type="submit" class="btn btn--white">Enviar mensagem</button>
+        <p class="form__msg" id="formMsg"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <strong>UMACI</strong>
+        <span>Coleção de Insetos — Universidade da Madeira</span>
+      </div>
+      <nav class="footer__nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#colecoes">Coleções</a>
+        <a href="#investigacao">Investigação</a>
+        <a href="#contacto">Contacto</a>
+        <a href="https://entomoteca.web.uma.pt" target="_blank">Site original</a>
+      </nav>
+      <p class="footer__copy">© 2024 UMACI — Universidade da Madeira</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+ <!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Universidade da Madeira - Coleção de Insetos" />
+  <meta name="author" content="Jéssica Cabral Agostinho" />
+  <title>UMACI — Coleção de Insetos da Universidade da Madeira</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <img src="./assets/images/LOGO INSETOS LAB PNG.png" class="logo" alt="UMACI Logo" />
+    <ul class="nav__links" id="navLinks">
+      <li><a href="./index.html">Início</a></li>
+      <li><a href="#colecoes">Coleções</a></li>
+      <li><a href="./investigation.html">Investigação</a></li>
+      <li><a href="./education.html">Ensino</a></li>
+      <li><a href="./volunteering.html">Voluntariado</a></li>
+      <li><a href="./team.html">Equipa</a></li>
+    </ul>
+    <a href="#contacto" class="nav__cta">Contacto</a>
+    <button class="nav__toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero__parallax" id="heroBg">
+      <img src="./assets/images/Borboleta-monarca.jpg" alt="Borboleta Monarca" />
+    </div>
+    <div class="hero__glass">
+      <span class="hero__kicker">Universidade da Madeira</span>
+      <h1>Descobrindo a vida <em>invisível</em><br />com ciência e magia</h1>
+      <p>Com mais de 3400 espécies descritas, somos o maior acervo<br />de biodiversidade do Arquipélago da Madeira.</p>
+      <div class="hero__btns">
+        <a href="#colecoes" class="btn btn--primary">Explorar coleções</a>
+        <a href="./investigation.html" class="btn btn--glass">Investigação →</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Explorar</span>
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre__grid">
+        <div class="sobre__img-col">
+          <div class="img-stack">
+            <img class="img-stack__back" src="./assets/images/5.JPG" alt="Laboratório" />
+            <img class="img-stack__front" src="./assets/images/4.png" alt="Espécime de inseto" />
+            <div class="img-stack__badge">
+              <strong>+3.400</strong>
+              <span>espécies descritas</span>
+            </div>
+          </div>
+        </div>
+        <div class="sobre__text">
+          <span class="section-tag">Sobre a UMACI</span>
+          <h2>Guardiões da<br /><em>natureza</em><br />madeirense</h2>
+          <p>Os insetos são o grupo de animais mais diverso do Arquipélago da Madeira e alvo de estudo constante por parte de docentes e alunos.</p>
+          <p>Criada em <strong>1998</strong>, a Coleção de Insetos da Universidade da Madeira preserva um património biológico inestimável para a ciência e para a região.</p>
+          <div class="sobre__nums">
+            <div class="num-card">
+              <strong>1998</strong>
+              <span>Ano de fundação</span>
+            </div>
+            <div class="num-card">
+              <strong>3.4k+</strong>
+              <span>Espécies</span>
+            </div>
+            <div class="num-card">
+              <strong>UMA</strong>
+              <span>Instituição</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="colecoes" id="colecoes">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Catálogo</span>
+        <h2>As nossas<br /><em>Coleções</em></h2>
+      </div>
+      <div class="colecoes__cards">
+        <a href="./hemiptera.html" class="glass-card">
+          <div class="glass-card__top">
+            <span class="glass-card__icon">🐛</span>
+            <h3>Hemíptera</h3>
+          </div>
+          <p>Especial foco em Auchenorrhyncha e espécies nativas do arquipélago.</p>
+          <span class="glass-card__link">Explorar →</span>
+        </a>
+        <a href="./medical_veterinary.html" class="glass-card glass-card--accent">
+          <div class="glass-card__top">
+            <span class="glass-card__icon">🏥</span>
+            <h3>Médica e Veterinária</h3>
+          </div>
+          <p>Estudo de vetores e espécies com impacto na saúde pública e animal.</p>
+          <span class="glass-card__link">Explorar →</span>
+        </a>
+        <a href="./pedagogical.html" class="glass-card">
+          <div class="glass-card__top">
+            <span class="glass-card__icon">📚</span>
+            <h3>Pedagógica</h3>
+          </div>
+          <p>Material didático desenhado para o ensino e formação de novos cientistas.</p>
+          <span class="glass-card__link">Explorar →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="investigacao" id="impacto">
+    <div class="container">
+      <div class="investigacao__layout">
+        <div class="investigacao__text">
+          <span class="section-tag">O nosso impacto</span>
+          <h2>Ciência para o<br /><em>futuro</em></h2>
+          <p>A UMACI inspira e transforma o ensino na Universidade da Madeira através do talento dos seus alunos e investigadores.</p>
+        </div>
+        <div class="investigacao__areas">
+          <div class="area-pill"><span>🎓</span> Educação e Talento</div>
+          <div class="area-pill"><span>🔬</span> Investigação Científica</div>
+          <div class="area-pill"><span>🌿</span> Conservação e Comunidade</div>
+          <div class="area-pill"><span>🔍</span> Monitorização de Espécies</div>
+          
+          <div class="investigacao__highlight">
+            <strong>"Insetos da Madeira"</strong>
+            <span>Une a ciência e a comunidade no estudo da biodiversidade.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="equipa" style="background: #f9fbf9; padding: 100px 0;">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="section-tag">Comunidade</span>
+        <h2>Testemunhos</h2>
+      </div>
+      <div class="equipa__grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        <div class="num-card" style="text-align: center; padding: 30px;">
+          <p>“Experiência incrível! Aprendi muito sobre a natureza invisível!”</p>
+          <strong>— Joana</strong>
+        </div>
+        <div class="num-card" style="text-align: center; padding: 30px;">
+          <p>“Um projeto que inspira crianças e adultos!”</p>
+          <strong>— Carlos</strong>
+        </div>
+        <div class="num-card" style="text-align: center; padding: 30px;">
+          <p>“A ciência ao alcance de todos!”</p>
+          <strong>— Maria</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <div class="contacto__panel">
+        <div class="contacto__left">
+          <span class="section-tag section-tag--light">Contacto</span>
+          <h2>Fala <em>connosco</em></h2>
+          <p>Estamos sediados na Universidade da Madeira, prontos para colaborar.</p>
+          <div class="contacto__info">
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <div>
+                <strong>Localização</strong>
+                <span>Campus da Penteada, Funchal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contacto__form">
+          <h3>Enviar mensagem</h3>
+          <input type="text" placeholder="Nome" required />
+          <input type="email" placeholder="E-mail" required />
+          <textarea placeholder="A sua mensagem..." rows="5" required></textarea>
+          <button type="submit" class="btn btn--primary btn--full">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <strong>UMACI</strong>
+          </div>
+          <p>Coleção de Insetos da Universidade da Madeira. Preservando a biodiversidade insular.</p>
+        </div>
+        <div class="footer__col">
+          <strong>Explorar</strong>
+          <a href="./contacts.html">Contactos</a>
+          <a href="./info.html">Informações</a>
+          <a href="./field_trips.html">Saídas de Campo</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <script>document.write(new Date().getFullYear())</script> JÉSSICA AGOSTINHO • COLEÇÃO DE INSETOS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

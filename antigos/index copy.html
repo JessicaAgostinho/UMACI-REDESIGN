@@ -1,0 +1,227 @@
+ <!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UMACI — Coleção de Insetos da Universidade da Madeira</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <nav class="nav" id="nav">
+        <img src="./assets/images/logo.png" class="logo" alt="UMACI Logo" />
+        <ul class="nav__links" id="navLinks">
+            <li><a href="#sobre">Início</a></li>
+            <li><a href="#colecoes">Coleções</a></li>
+            <li><a href="#investigacao">Investigação</a></li>
+            <li><a href="#equipa">Equipa</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+        </ul>
+        <a href="#contacto" class="nav__cta">Contacto</a>
+        <button class="nav__toggle" id="navToggle">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero__parallax" id="heroBg">
+            <img src="./assets/images/Borboleta-monarca.jpg" alt="Borboleta Monarca" />
+        </div>
+        <div class="hero__glass">
+            <span class="hero__kicker">Universidade da Madeira · UMACI</span>
+            <h1>A vida em <em>miniatura</em><br />que molda o mundo</h1>
+            <p>Descobrindo a vida invisível com ciência e magia. Mais de 3400 espécies descritas, o grupo mais diverso do Arquipélago da Madeira.</p>
+            <div class="hero__btns">
+                <a href="#colecoes" class="btn btn--primary">Explorar coleções</a>
+                <a href="#investigacao" class="btn btn--glass">Investigação →</a>
+            </div>
+        </div>
+        <div class="hero__scroll-hint">
+            <div class="scroll-line"></div>
+            <span>Explorar</span>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="sobre__grid">
+                <div class="sobre__img-col">
+                    <div class="img-stack">
+                        <img class="img-stack__back" src="./assets/images/5.JPG" alt="Trabalho de campo" />
+                        <img class="img-stack__front" src="./assets/images/4.png" alt="Espécime UMACI" />
+                        <div class="img-stack__badge">
+                            <strong>+3400</strong>
+                            <span>Espécies</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre__text">
+                    <span class="section-tag">Sobre a UMACI</span>
+                    <h2>Guardiões da<br /><em>biodiversidade</em><br />da Madeira</h2>
+                    <p>Criada em 1998, a Coleção de Insetos da Universidade da Madeira é um pilar da investigação biológica no arquipélago.</p>
+                    <p style="color: var(--accent2); font-weight: 500;">O nosso trabalho une docentes e alunos no estudo de uma das maiores coleções de insetos das ilhas atlânticas.</p>
+                    <div class="sobre__nums">
+                        <div class="num-card">
+                            <strong>1998</strong>
+                            <span>Fundação</span>
+                        </div>
+                        <div class="num-card">
+                            <strong>250K+</strong>
+                            <span>Espécimes</span>
+                        </div>
+                        <div class="num-card">
+                            <strong>120+</strong>
+                            <span>Publicações</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="colecoes" id="colecoes">
+        <div class="colecoes__bg-img" id="colecoesBg">
+            <img src="./assets/images/7.png" alt="Fundo Coleções" />
+        </div>
+        <div class="container">
+            <div class="section-head text-center">
+                <span class="section-tag">Catálogo Histórico</span>
+                <h2>O que <em>preservamos</em></h2>
+            </div>
+            <div class="colecoes__cards">
+                <a href="./pedagogical.html" class="glass-card">
+                    <div class="glass-card__top">
+                        <span class="glass-card__icon">📚</span>
+                        <h3>Pedagógica</h3>
+                    </div>
+                    <p>A UMACI inspira e muda o ensino na Universidade através do talento dos alunos.</p>
+                    <span class="glass-card__link">Saber mais →</span>
+                </a>
+                <a href="./medical_veterinary.html" class="glass-card glass-card--accent">
+                    <div class="glass-card__top">
+                        <span class="glass-card__icon">🏥</span>
+                        <h3>Médica & Veterinária</h3>
+                    </div>
+                    <p>Vetores e espécies com relevância para saúde pública e epidemiologia no arquipélago.</p>
+                    <span class="glass-card__link">Saber mais →</span>
+                </a>
+                <a href="./hemiptera.html" class="glass-card">
+                    <div class="glass-card__top">
+                        <span class="glass-card__icon">🐛</span>
+                        <h3>Hemíptera</h3>
+                    </div>
+                    <p>Especialização em Auchenorrhyncha e outras espécies vitais da Macaronésia.</p>
+                    <span class="glass-card__link">Saber mais →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" id="galeria" style="background: var(--bg2);">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-tag">Visual</span>
+                <h2>Galeria da <em>Natureza</em></h2>
+            </div>
+            <div class="equipa__grid">
+                <div class="membro-card" data-animate>
+                    <img src="./assets/images/4.png" alt="Galeria 1" />
+                </div>
+                <div class="membro-card" data-animate>
+                    <img src="./assets/images/5.JPG" alt="Galeria 2" />
+                </div>
+                <div class="membro-card" data-animate>
+                    <img src="./assets/images/7.png" alt="Galeria 3" />
+                </div>
+                <div class="membro-card" data-animate>
+                    <img src="./assets/images/10.png" alt="Galeria 4" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="investigacao" style="background: var(--accent); color: white;">
+        <div class="container">
+            <div class="section-head text-center">
+                <h2 style="color: white;">Vozes da <em>Comunidade</em></h2>
+            </div>
+            <div class="colecoes__cards">
+                <div class="glass-card">
+                    <p>"Experiência incrível! Aprendi muito sobre a natureza invisível!"</p>
+                    <strong>— Joana</strong>
+                </div>
+                <div class="glass-card">
+                    <p>"Um projeto que inspira crianças e adultos!"</p>
+                    <strong>— Carlos</strong>
+                </div>
+                <div class="glass-card">
+                    <p>"A ciência ao alcance de todos!"</p>
+                    <strong>— Maria</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <div class="contacto__bg">
+            <img src="./assets/images/10.png" alt="Contacto BG" />
+        </div>
+        <div class="container">
+            <div class="contacto__panel">
+                <div class="contacto__left">
+                    <span class="section-tag section-tag--light">Contacto</span>
+                    <h2>Fala <em>connosco</em></h2>
+                    <p>Tens dúvidas sobre a coleção ou queres colaborar? Envia-nos uma mensagem.</p>
+                    <div class="contacto__info">
+                        <div class="info-item">
+                            <span class="info-icon">✉</span>
+                            <div><strong>Email</strong><a href="mailto:umaci@uma.pt">umaci@uma.pt</a></div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div><strong>Morada</strong><span>Campus da Penteada, Funchal</span></div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contacto__form" id="contactForm">
+                    <input type="text" placeholder="Nome" required />
+                    <input type="email" placeholder="Email" required />
+                    <textarea placeholder="A sua mensagem..." rows="4" required></textarea>
+                    <button type="submit" class="btn btn--primary btn--full">Enviar Mensagem</button>
+                    <p id="formMsg" class="form__msg"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <strong>UMACI</strong>
+                    <p>Preservando a biodiversidade do arquipélago da Madeira desde 1998.</p>
+                </div>
+                <div class="footer__col">
+                    <strong>Explorar</strong>
+                    <a href="./index.html">Início</a>
+                    <a href="./investigation.html">Investigação</a>
+                    <a href="./volunteering.html">Voluntariado</a>
+                </div>
+                <div class="footer__col">
+                    <strong>Informação</strong>
+                    <a href="./info.html">Informações</a>
+                    <a href="./field_trips.html">Saídas de Campo</a>
+                    <a href="./contacts.html">Contactos</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>© <script>document.write(new Date().getFullYear())</script> JÉSSICA AGOSTINHO • UMACI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

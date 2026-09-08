@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <!-- Basic -->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Site Metas -->
+    <title>UMACI - LOGIN</title>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/accordion.css"/>
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"/>
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* faz o body comportar-se como um layout flex vertical */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* ocupa toda a altura da janela */
+
+        }
+
+        /* Botão flutuante */
+        #translate-btn {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #4CAF50;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            z-index: 999999;
+            transition: 0.3s;
+        }
+
+        #translate-btn:hover {
+            background-color: #43a047;
+            transform: scale(1.08);
+        }
+
+        /* --- REMOVER A BARRA DO GOOGLE TRANSLATE --- */
+        .goog-te-banner-frame.skiptranslate {
+            display: none !important;
+        }
+
+        body {
+            top: 0 !important;
+        }
+
+        /* --- REMOVER A CAIXA DE TEXTO / POPUP --- */
+        .goog-te-gadget-icon,
+        .goog-tooltip,
+        .goog-tooltip:hover,
+        .goog-text-highlight {
+            display: none !important;
+            visibility: hidden !important;
+        }
+
+        /* Remover iframe amarelo */
+        iframe.goog-te-banner-frame {
+            display: none !important;
+        }
+
+        /* Remover popup azul */
+        .goog-te-menu-frame {
+            display: none !important;
+        }
+
+        /* Área de fundo com imagem */
+        .login-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .login-section::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url('./assets/images/butterflies-.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(0px);
+            transform: scale(1.02); /* prevents edge clipping */
+            z-index: -1;
+        }
+
+        /* Caixa com efeito vidro (glassmorphism) */
+        .login-box {
+            position: relative;
+            z-index: 1;
+            width: 350px;
+            padding: 40px 30px;
+            background: rgba(255, 255, 255, 0.20);
+            backdrop-filter: blur(12px);
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        .login-box h2 {
+            margin-bottom: 25px;
+            font-size: 24px;
+            font-weight: bold;
+            color: darkgreen;
+        }
+
+        /* Inputs */
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.30);
+            color: #000;
+        }
+
+        .input-field::placeholder {
+            color: #444;
+        }
+
+        /* Botão */
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background: #00d676;
+            border: none;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .login-btn:hover {
+            background: #00b863;
+        }
+    </style>
+</head>
+<body>
+<section class="login-section">
+    <div class="login-box">
+        <h2>Iniciar Sessão</h2>
+
+        <input type="text" placeholder="Nome de utilizador" class="input-field" id="username">
+        <input type="password" placeholder="Palavra-passe" class="input-field" id="password">
+
+        <button class="login-btn" id="loginBtn">Iniciar</button>
+
+        <p id="errorMsg" style="color: red; display: none; font-size: 18px; margin: 20px 0 0 0">
+            Wrong username and/or password.
+        </p>
+    </div>
+</section>
+
+<!-- Botão Flutuante -->
+<div id="translate-btn">🌐</div>
+
+<!-- Google Translate escondido -->
+<div id="google_translate_element" style="display:none;"></div>
+
+<script>
+    document.getElementById("loginBtn").addEventListener("click", function () {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const errorMsg = document.getElementById("errorMsg");
+
+        if (username === "asd" && password === "123") {
+            window.location.href = "platform.html";
+        } else {
+            errorMsg.style.display = "block";
+        }
+    });
+</script>
+
+<script>
+    function loadGoogleTranslate() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'pt', includedLanguages: 'pt,en'},
+            'google_translate_element'
+        );
+    }
+
+    // Alterna PT ↔ EN sem abrir menus nem barras
+    document.getElementById("translate-btn").onclick = function () {
+        const select = document.querySelector("select.goog-te-combo");
+
+        if (select) {
+            select.value = select.value === "en" ? "pt" : "en";
+            select.dispatchEvent(new Event("change"));
+        }
+    };
+</script>
+
+<!-- Script oficial do Google -->
+<script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+
+<!-- Bootstrap Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/vendors/jquery/jquery-3.4.1.js"></script>
+<script src="./js/projects.js"></script>
+</body>
+</html>

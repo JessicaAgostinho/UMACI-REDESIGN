@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UMACI — Informações</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  
+  <nav class="nav" id="nav">
+    <img src="./assets/images/logo.png" class="logo" alt="logo" />
+    <ul class="nav__links" id="navLinks">
+      <li><a href="./index.html">Início</a></li>
+      <li class="dropdown">
+        <a href="#colecoes" class="dropdown__title">Coleções</a>
+      <ul class="dropdown__menu">
+        <li><a href="./pedagogical.html">Pedagógica</a></li>
+        <li><a href="./medical_veterinary.html">Médica e Veterinária</a></li>
+        <li><a href="./hemiptera.html">Hemíptera</a></li>
+      </ul>
+    </li>
+      <li><a href="./investigation.html">Investigação</a></li>
+      <li><a href="./education.html">Ensino</a></li>
+      <li><a href="./volunteering _options.html">Voluntariado</a></li>
+      <li><a href="./team.html">Equipa</a></li>
+    </ul>
+    <a href="#contacto" class="nav__cta">Contacto</a>
+    <button class="nav__toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="hero" id="hero" style="height: 65vh; min-height: 450px;">
+    <div class="hero__parallax" id="heroBg">
+      <img src="./assets/images/7.png" alt="Coleção de Insetos" onerror="this.src='https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=1600&q=80'" />
+    </div>
+    <div class="hero__glass">
+      <span class="hero__kicker">Universidade da Madeira · Conhecimento</span>
+      <h1>Informações</h1>
+      <p>Descubra o impacto educativo, científico e comunitário do acervo entomológico da Macaronésia.</p>
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre" style="padding-bottom: 20px;">
+    <div class="container" style="text-align: center;">
+      <span class="section-tag" style="margin: 0 auto 1rem auto;">Acervo Entomológico</span>
+      <h2 style="font-family: 'DM Serif Display', serif; font-size: clamp(2rem, 4vw, 3rem); color: #0a5a00; text-transform: uppercase;">
+        Aqui encontras as diferentes<br><em>Coleções da Universidade e da UMACI</em>
+      </h2>
+    </div>
+  </section>
+
+  <section class="colecoes" style="padding: 40px 0;">
+    <div class="container">
+      <div style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); padding: 40px; border-radius: 24px; color: #0a5a00; line-height: 1.8; font-size: 1.15rem;">
+        <p style="margin-bottom: 24px;">A Coleção de Insetos da UMa é uma ferramenta excelente por fornecer aos estudantes um treino abrangente e por estabelecer uma relação entre diversas unidades curriculares. Além disso, estimula a sua curiosidade e interesse em temáticas como o declínio da biodiversidade, espécies invasoras, conservação da natureza, alterações climáticas e patogenéneos emergentes. Esta compreensão alargada da diversidade e complexidade dos seres vivos serve também para desenvolver atitudes de respeito e amor pela natureza nas localidades de Portugal Continental.</p>
+        <p style="margin-bottom: 0;">O material da Coleção dá apoio a várias unidades curriculares da Licenciatura em Biologia, de Mestrados em Ecoturismo, de Mestrados em Bioquímica Aplicada, do Curso Superior de Guias de Natureza, ou na Formação de Educadores e Professores. Os espécimes têm origem em coleções de estudantes, projetos de investigação e prestação de serviços, trabalhos académicos como teses de mestrado ou de doutoramento e estágios. A nossa coleção documenta a presença de espécies ao longo do tempo e é uma fonte inestimável para registar mudanças nas distribuições das espécies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="colecoes" style="padding-top: 20px; padding-bottom: 60px;">
+    <div class="container">
+      <div class="colecoes__cards" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        
+        <div class="glass-card" style="border-top: 4px solid #D58522; background: rgba(218, 124, 11, 0.1) !important; backdrop-filter: none !important;">
+          <div class="glass-card__top">
+            <span class="glass-card__icon">🎓</span>
+            <h3>Educação</h3>
+          </div>
+          <p style="color: #000000;">A UMACI inspira e muda o ensino na Universidade da Madeira através do talento e dedicação dos alunos.</p>
+        </div>
+
+        <div class="glass-card glass-card--accent" style="border-top: 4px solid #CED053; background: rgba(173, 218, 11, 0.1) !important; backdrop-filter: none !important;">
+          <div class="glass-card__top">
+            <span class="glass-card__icon">🔬</span>
+            <h3>Ciência</h3>
+          </div>
+          <p style="color: #000000;">Participe na UMACI e ajude a preservar uma das maiores coleções biológicas e registos do arquipélago.</p>
+        </div>
+
+        <div class="glass-card" style="border-top: 4px solid #8FD053; background: rgba(218, 124, 11, 0.1)!important; backdrop-filter: none !important;">
+          <div class="glass-card__top">
+            <span class="glass-card__icon">🌿</span>
+            <h3>Conservação</h3>
+          </div>
+          <p style="color: #000000;">"Insetos da Madeira" une ciência e comunidade no mapeamento e estudo dos ecossistemas. Descubra como participar.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="investigacao" id="objetivos" style="background: #ffbe6a;">
+    <div class="container">
+      <div class="investigacao__layout">
+        <div class="investigacao__text">
+          <span class="section-tag">Missão</span>
+          <h2>Objetivos fundamentais<br />da <em style="color: #ffffff;">UMACI</em></h2>
+          <p>Atuamos em múltiplas frentes científicas para assegurar a monitorização e proteção da fauna entomológica insular face aos desafios globais.</p>
+        </div>
+        <div class="investigacao__areas">
+          <div class="area-pill"><span>🔍</span> Identificar e descobrir novas espécies</div>
+          <div class="area-pill"><span>🧬</span> Estudar relações evolutivas</div>
+          <div class="area-pill"><span>🛡️</span> Reconhecer espécies ameaçadas</div>
+          <div class="area-pill"><span>📊</span> Avaliar o status e qualidade de habitats</div>
+          <div class="area-pill"><span>📋</span> Ajudar a definir e implantar planos de conservação</div>
+          <div class="area-pill"><span>🗺️</span> Estudar distribuição de espécies exóticas</div>
+          <div class="area-pill"><span>☀️</span> Avaliar os efeitos das mudanças climáticas</div>
+          <div class="area-pill"><span>🏥</span> Localizar populações de importância médica e veterinária</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sobre" style="padding: 80px 0;">
+    <div class="container">
+      <span class="section-tag" style="margin-bottom: 1rem;">Digitalização</span>
+      <h2 style="font-family: 'DM Serif Display', serif; font-size: clamp(2rem, 4vw, 3rem); color: #3ec400; margin-bottom: 15px;">A Coleção em Números</h2>
+      <p style="color: rgba(0, 0, 0, 0.7); max-width: 700px; margin-bottom: 40px;">Em março de 2021, a Universidade da Madeira iniciou um programa de voluntariado dinâmico com o principal objetivo de salvaguardar e digitalizar a Coleção de Insetos da Universidade da Madeira.</p>
+      
+      <div class="sobre__nums" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: 60px;">
+        <div class="num-card" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 30px; border-radius: 16px;">
+          <strong class="stat-number" data-value="24480" style="color: #8FD053;">0</strong>
+          <span>Espécimes contabilizados</span>
+        </div>
+        <div class="num-card" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 30px; border-radius: 16px;">
+          <strong class="stat-number" data-value="18382" style="color: #CED053;">0</strong>
+          <span>Espécimes digitalizados</span>
+        </div>
+        <div class="num-card" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 30px; border-radius: 16px;">
+          <strong class="stat-number" data-value="40000" style="color: #D58522;">0</strong>
+          <span>Estimativa do acervo total</span>
+        </div>
+      </div>
+
+      <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 40px; border-radius: 24px;">
+        <h3 style="font-family: 'DM Serif Display', serif; color: #000000; margin-bottom: 40px; font-size: 1.5rem;">Número de Espécimes por Ordem</h3>
+        
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; height: 300px; padding: 0 10px; border-bottom: 2px solid rgba(255,255,255,0.1); gap: 15px; overflow-x: auto;">
+          <div style="display: flex; flex-direction: column; align-items: center; flex: 1; min-width: 60px;">
+            <div class="bar" data-height="250" style="width: 100%; background: linear-gradient(to top, #2d5a3d, #8FD053); border-radius: 6px 6px 0 0; transition: height 1s cubic-bezier(0.4, 0, 0.2, 1); height: 0;"></div>
+            <span style="font-size: 0.85rem; color: rgba(0, 0, 0, 0.7); margin-top: 12px; text-align: center; white-space: nowrap;">Hemiptera</span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; flex: 1; min-width: 60px;">
+            <div class="bar" data-height="110" style="width: 100%; background: linear-gradient(to top, #2d5a3d, #8FD053); border-radius: 6px 6px 0 0; transition: height 1s cubic-bezier(0.4, 0, 0.2, 1); height: 0;"></div>
+            <span style="font-size: 0.85rem; color: rgba(0, 0, 0, 0.7); margin-top: 12px; text-align: center; white-space: nowrap;">Lepidoptera</span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; flex: 1; min-width: 60px;">
+            <div class="bar" data-height="140" style="width: 100%; background: linear-gradient(to top, #2d5a3d, #8FD053); border-radius: 6px 6px 0 0; transition: height 1s cubic-bezier(0.4, 0, 0.2, 1); height: 0;"></div>
+            <span style="font-size: 0.85rem; color: rgba(0, 0, 0, 0.7); margin-top: 12px; text-align: center; white-space: nowrap;">Orthoptera</span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; flex: 1; min-width: 60px;">
+            <div class="bar" data-height="95" style="width: 100%; background: linear-gradient(to top, #2d5a3d, #8FD053); border-radius: 6px 6px 0 0; transition: height 1s cubic-bezier(0.4, 0, 0.2, 1); height: 0;"></div>
+            <span style="font-size: 0.85rem; color: rgba(0, 0, 0, 0.7); margin-top: 12px; text-align: center; white-space: nowrap;">Hymenoptera</span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; flex: 1; min-width: 60px;">
+            <div class="bar" data-height="80" style="width: 100%; background: linear-gradient(to top, #2d5a3d, #8FD053); border-radius: 6px 6px 0 0; transition: height 1s cubic-bezier(0.4, 0, 0.2, 1); height: 0;"></div>
+            <span style="font-size: 0.85rem; color: rgba(0, 0, 0, 0.7); margin-top: 12px; text-align: center; white-space: nowrap;">Coleoptera</span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; flex: 1; min-width: 60px;">
+            <div class="bar" data-height="50" style="width: 100%; background: linear-gradient(to top, #2d5a3d, #8FD053); border-radius: 6px 6px 0 0; transition: height 1s cubic-bezier(0.4, 0, 0.2, 1); height: 0;"></div>
+            <span style="font-size: 0.85rem; color: rgba(0, 0, 0, 0.7); margin-top: 12px; text-align: center; white-space: nowrap;">Diptera</span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; flex: 1; min-width: 60px;">
+            <div class="bar" data-height="35" style="width: 100%; background: linear-gradient(to top, #2d5a3d, #8FD053); border-radius: 6px 6px 0 0; transition: height 1s cubic-bezier(0.4, 0, 0.2, 1); height: 0;"></div>
+            <span style="font-size: 0.85rem; color: rgba(0, 0, 0, 0.7); margin-top: 12px; text-align: center; white-space: nowrap;">Dermaptera</span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; flex: 1; min-width: 60px;">
+            <div class="bar" data-height="70" style="width: 100%; background: linear-gradient(to top, #2d5a3d, #8FD053); border-radius: 6px 6px 0 0; transition: height 1s cubic-bezier(0.4, 0, 0.2, 1); height: 0;"></div>
+            <span style="font-size: 0.85rem; color: rgba(0, 0, 0, 0.7); margin-top: 12px; text-align: center; white-space: nowrap;">Blattodea</span>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; flex: 1; min-width: 60px;">
+            <div class="bar" data-height="220" style="width: 100%; background: linear-gradient(to top, #2d5a3d, #CED053); border-radius: 6px 6px 0 0; transition: height 1s cubic-bezier(0.4, 0, 0.2, 1); height: 0;"></div>
+            <span style="font-size: 0.85rem; color: rgba(0, 0, 0, 0.7); margin-top: 12px; text-align: center; white-space: nowrap; font-weight: bold;">Outros</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER ATUALIZADO -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <strong>UMACI</strong>
+          </div>
+          <p>Coleção de Insetos da Universidade da Madeira. Preservando a biodiversidade através da ciência.</p>
+        </div>
+        <div class="footer__col">
+          <strong>Links Úteis</strong>
+          <a href="./contacts.html">Contactos</a>
+          <a href="./info.html">Informações</a>
+          <a href="./field_trips.html">Saídas de Campo</a>
+        </div>
+        <div class="footer__col">
+          <strong>Instituição</strong>
+          <a href="https://www.uma.pt" target="_blank">Universidade da Madeira</a>
+          <a href="./investigation.html">Investigação</a>
+          <a href="./volunteering _options.html">Voluntariado</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <script>document.write(new Date().getFullYear())</script> JÉSSICA AGOSTINHO • COLEÇÃO DE INSETOS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>
+    // CONTADORES ANIMADOS
+    document.querySelectorAll('.stat-number').forEach(el => {
+        let target = +el.getAttribute('data-value');
+        let count = 0;
+        let speed = target / 100;
+
+        function update() {
+            count += speed;
+            if (count < target) {
+                el.textContent = Math.floor(count).toLocaleString('pt-PT');
+                requestAnimationFrame(update);
+            } else {
+                el.textContent = target.toLocaleString('pt-PT');
+            }
+        }
+        update();
+    });
+
+    // ANIMAÇÃO INTEGRADA DAS BARRAS DO GRÁFICO
+    document.querySelectorAll('.bar').forEach(bar => {
+        let height = bar.getAttribute('data-height');
+        setTimeout(() => {
+            bar.style.height = height + "px";
+        }, 400);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <!-- Basic -->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Site Metas -->
+    <title>UMACI - Destaques</title>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/style.css"/>
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"/>
+    <style>
+        .login-box {
+            position: relative !important;
+            margin: 120px auto 80px auto !important;
+            display: block !important;
+            float: none !important;
+        }
+
+        nav.navbar {
+            margin-top: 160px; /* para não ficar por baixo do SVG */
+        }
+    </style>
+
+</head>
+<body>
+<svg viewBox="0 0 1440 440" preserveAspectRatio="none"
+     style="position: absolute; top: 0; left: 0; width: 100%; height: 300px;">
+    <defs>
+        <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#F9E4BC" />
+            <stop offset="100%" stop-color="white"/>
+        </linearGradient>
+    </defs>
+
+    <path fill="url(#waveGradient)"
+          d="M0,160
+       C120,180 240,120 360,160
+       C480,200 600,100 720,160
+       C840,220 960,140 1080,160
+       C1200,180 1320,120 1440,160
+       L1440,0 L0,0 Z">
+    </path>
+</svg>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <img src="./assets/images/logo.png"
+             style="width: 100px; max-height: 150px; border-radius: 8px;"   alt="logo" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav" style="font-size: 18px">
+                <li class="nav-item" style="padding: 0 10px"><a class="custom-nav-link" style="color: black; font-weight: bold" href="./index.html">Início</a></li>
+                <li class="nav-item dropdown" style="padding: 0 10px">
+                    <a class="custom-nav-link dropdown-toggle" href="#" id="colecoesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black; font-weight: bold">
+                        Coleções
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="colecoesDropdown">
+                        <li><a class="dropdown-item" href="./pedagogical.html">Pedagógica</a></li>
+                        <li><a class="dropdown-item" href="./medical_veterinary.html">Médica e Veterinária</a></li>
+                        <li><a class="dropdown-item" href="./hemiptera.html">Hemíptera Auchenorrhyncha</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item" style="padding: 0 10px"><a class="custom-nav-link" style="color: black; font-weight: bold" href="./investigation.html">Investigação</a></li>
+                <li class="nav-item" style="padding: 0 10px"><a class="custom-nav-link" style="color: black; font-weight: bold" href="./events.html">Eventos</a></li>
+                <li class="nav-item" style="padding: 0 10px"><a class="custom-nav-link" style="color: black; font-weight: bold" href="./education.html">Ensino</a></li>
+                <li class="nav-item" style="padding: 0 10px"><a class="custom-nav-link" style="color: black; font-weight: bold" href="./volunteering.html">Voluntariado</a></li>
+                <li class="nav-item" style="padding: 0 10px"><a class="custom-nav-link" style="color: black; font-weight: bold" href="./team.html">Equipa</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="login-box">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button>Login</button>
+    <div class="signup-text">
+        Not a member? <a href="#">Sign Up</a>
+    </div>
+</div>
+
+
+<footer class="text-center pb-2 pt-4" style="background-color: #8FD053">
+    <div class="footer-menu py-3">
+        <a href="./contacts.html">CONTACTOS</a>
+        <a href="./info.html">INFORMAÇÕES</a>
+        <a href="./field_trips.html">SAÍDAS DE CAMPO</a>
+    </div>
+
+    <p class="m-0 pt-3">&copy;
+        <script>document.write(new Date().getFullYear().toString())</script> JÉSSICA AGOSTINHO • COLEÇÃO DE INSETOS
+    </p>
+</footer>
+
+<!-- Bootstrap Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
